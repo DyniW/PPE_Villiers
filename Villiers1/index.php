@@ -25,10 +25,13 @@ if($page === 'home'){
  
   require '';
 
+}elseif ($page ==='fam') {
+	require 'controleur/c_fam.php';
 }elseif ($page === 'espaceFam') {
     require 'controleur/c_espaceFam.class.php';
-  }
-
+}elseif ($page =='co'){
+	require 'controleur/c_connexion.php';
+}
 ?>
 
 </div>

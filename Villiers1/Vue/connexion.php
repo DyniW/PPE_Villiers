@@ -1,6 +1,3 @@
-<?php
-require ("header.vue.php");
-?>
 
 <form method="post" action="">
 
@@ -26,12 +23,6 @@ require ("header.vue.php");
 
 
 
-
-
-
-<?php
-require("footer.vue.php");
-?>
 
 </body>
 </html>

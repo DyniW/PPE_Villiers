@@ -1,6 +1,5 @@
 <?php
-include("../Modele/model.class.php");
-include("../Modele/App.php");
+
 	class connexion{
 	}
 	$password="";
@@ -14,9 +13,9 @@ include("../Modele/App.php");
 		$password=$_POST["password"];
 	
 	$db = App::getDatabase();
-	$email = $db->query("SELECT * FROM FAMILLE where mail = '$login' ;")->fetch(PDO::FETCH_OBJ);
-	$mdp = $db->query("SELECT * FROM FAMILLE where Password = '$password' ;")->fetch(PDO::FETCH_OBJ);
-	$co = $db->query("SELECT * FROM FAMILLE where Password ='$password' and mail = '$login';")->fetch(PDO::FETCH_OBJ);
+	$email = $db->query("SELECT * FROM ADULTE where mail = '$login' ;")->fetch(PDO::FETCH_OBJ);
+	$mdp = $db->query("SELECT * FROM ADULTE where Password = '$password' ;")->fetch(PDO::FETCH_OBJ);
+	$co = $db->query("SELECT * FROM ADULTE where Password ='$password' and mail = '$login';")->fetch(PDO::FETCH_OBJ);
 
  	if($email == false){
  	 	$Erreur .="<span>Adresse Mail incorrect<span><br>";
@@ -29,5 +28,5 @@ include("../Modele/App.php");
  		$res="<span>Connecté<span><br>";
  	}
  	}
- 	require('../Vue/connexion.php');
+ 	require('Vue/connexion.php');
 ?>

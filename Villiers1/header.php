@@ -1,3 +1,8 @@
+<?php
+include("Modele/model.class.php");
+include("Modele/App.php");
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -71,12 +76,12 @@
         </ul>
       </li>
 
-        <li><a href="?p=espaceFam">Espace famille</a></li>
+        <li><a href="?p=fam">Espace famille</a></li>
         <li><a href="?p=contact">Contact</a></li>
       </ul>
       <img src="villiers_logo.png" class="img-thumbnail" alt="e" width="304" height="136">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="Controleur/c_connexion.php">Connexion<span class="glyphicon glyphicon-log-in"></span></a>
+        <li><a href="?p=co">Connexion<span class="glyphicon glyphicon-log-in"></span></a>
             </li>  </ul>
     </div>
   </div>

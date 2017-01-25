@@ -1,6 +1,4 @@
-<?php
-require ("header.vue.php");
-?>
+
 <form method="post" action="">
 
     <legend>Connexion Admin</legend>
@@ -24,6 +22,3 @@ require ("header.vue.php");
 </form>
 <?= $res?>
 
-<?php
-require("footer.vue.php");
-?>

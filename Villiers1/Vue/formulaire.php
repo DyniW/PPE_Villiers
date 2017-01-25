@@ -1,7 +1,4 @@
 
-<?php
-require ("header.vue.php");
-?>	
 <?= $Erreur ?></br>
 <form action="#" method="POST">
 <label for="nom">Nom</label></br>
@@ -26,8 +23,4 @@ require ("header.vue.php");
 <?= $succes ?>
 </form>
 
-<?php
-require ("footer.vue.php");
-?>
-</body>
 

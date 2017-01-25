@@ -1,6 +1,5 @@
 <?php
-include("../Modele/model.class.php");
-include("../Modele/App.php");
+
 	class connexion{
 	}
 	$password="";
@@ -32,6 +31,6 @@ include("../Modele/App.php");
  		$res="Connecté";
  	}
  	
- 	require('../Vue/admin.php');
+ 	require('Vue/admin.php');
 
 ?>
